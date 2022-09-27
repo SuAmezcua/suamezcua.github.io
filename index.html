@@ -1,51 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="main.js" defer></script>
-    <title>Document</title>
-  </head>
-  <body>
-    <div>
-      <h3 class="text">
-        Hola! Mi nombre es <span id="name"></span>, tengo
-        <span id="age"></span> años y <span id="likesMusic"></span>. Este es mi
-        primer proyecto con Javascript
-      </h3>
-      <h4 class="text">
-        Según Ageify, tengo <span id="guessedAge"></span> años, esto es
-        <span id="isGuessRight"></span>
-      </h4>
-    </div>
-    <div class="piano">
-      <div data-note="C" class="key white"></div>
-      <div data-note="Db" class="key black"></div>
-      <div data-note="D" class="key white"></div>
-      <div data-note="Eb" class="key black"></div>
-      <div data-note="E" class="key white"></div>
-      <div data-note="F" class="key white"></div>
-      <div data-note="Gb" class="key black"></div>
-      <div data-note="G" class="key white"></div>
-      <div data-note="Ab" class="key black"></div>
-      <div data-note="A" class="key white"></div>
-      <div data-note="Bb" class="key black"></div>
-      <div data-note="B" class="key white"></div>
+<html lang="es">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <title>Ejemplo layout flexbox</title>
+    <style>
+        html,
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            margin: 0;
+            background-color: rgb(163, 186, 169);
+            color: rgb(68, 94, 104)
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        div {
+            display: flex;
+        }
+
+        #footer {
+            display: flex;
+            margin-top: auto;
+            background: rgb(141, 131, 153);
+        }
+
+        #footer a {
+        
+        }
+
+        .footer__section {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .social__media__icons {
+            display: flex;
+            gap: 20px;
+        }
+
+        #main-content-container {}
+
+        #links-sidebar {}
+
+        #main-content {
+
+            flex: 6;
+
+            padding: 10px 20% 10px 10px;
+        }
+
+        .main-content_img--full-width {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <h1> 5 Seconds of Summer en el lanzamiento de su 5to albúm </h1>
+        <p>Luke Hemmings, Calum Hood, Michael Clifford y Ashton Irwin</p>
+    </header>
+
+    <nav>
+        Menu
+    </nav>
+
+    <div id="main-content-container">
+        <aside id="links-sidebar" style="flex:2; background: rgb(185, 155, 123)">
+            Links relacionados
+        </aside>
+        <section id="main-content">
+            <img src="https://los40es00.epimg.net/los40/imagenes/2022/05/12/musica/1652355384_166650_1652355530_gigante_normal.jpg"
+                alt="es una imagen de 5 Seconds of Summer" class="main-content_img--full-width">
+            <p>5 Seconds Of Summer (también conocidos como 5SOS por sus siglas) es una banda originaria de Sídney, Australia, de género pop rock, creada oficialmente el 3 de diciembre de 2011. Está integrada por Luke Hemmings (vocalista principal, piano y guitarra), Michael Clifford (guitarrista principal y voz), Calum Hood (voz, piano y bajo) y Ashton Irwin (batería y voz). Comenzaron a tener atención en 2012 después de publicar una serie de versiones de canciones populares en YouTube. </p>
+            <p>5 Seconds of Summer lanzó su primer sencillo «Out of My Limit» , exclusivamente en Australia y Nueva Zelanda en noviembre de 2012. En febrero de 2014, lanzaron «She Looks So Perfect» como su primer lanzamiento mundial. Llegó a listas en Australia, Nueva Zelanda, Irlanda y Reino Unido. Su primer álbum, 5 Seconds of Summer fue lanzado a finales de junio de 2014, llegando a número uno en 11 países. Fue seguido por un álbum en vivo titulado LiveSOS.</p>
+            <p>La banda lanzó su segundo álbum Sounds Good Feels Good en octubre de 2015, seguido por el lanzamiento de un documental en DVD llamado How Did We End Up Here.</p>
+
+        </section>
     </div>
 
-    <audio id="C" src="notes/C.mp3"></audio>
-    <audio id="Db" src="notes/Db.mp3"></audio>
-    <audio id="D" src="notes/D.mp3"></audio>
-    <audio id="Eb" src="notes/Eb.mp3"></audio>
-    <audio id="E" src="notes/E.mp3"></audio>
-    <audio id="F" src="notes/F.mp3"></audio>
-    <audio id="Gb" src="notes/Gb.mp3"></audio>
-    <audio id="G" src="notes/G.mp3"></audio>
-    <audio id="Ab" src="notes/Ab.mp3"></audio>
-    <audio id="A" src="notes/A.mp3"></audio>
-    <audio id="Bb" src="notes/Bb.mp3"></audio>
-    <audio id="B" src="notes/B.mp3"></audio>
-  </body>
+    </div>
+
+    <footer id="footer">
+        <div class="footer__social footer__section">
+            <h2>Mis redes</h2>
+            <div class="social__media__icons">
+                <a href="https://www.facebook.com/tefi.tefal.tefalle"> <i class="lni lni-facebook-filled"></i> </a>
+                <a href="https://www.instagram.com/5sos/"> <i class="lni lni-instagram-filled"></i> </a>
+                <a href="https://www.youtube.com/channel/UC-vKwDHcbPLtjml81ohGRng"> <i class="lni lni-youtube"></i> </a>
+                <a href="https://www.tiktok.com/@5sos"> <i class="lni lni-tiktok"></i> </a>
+                <a href="https://twitter.com/5sos"> <i class="lni lni-twitter-original"></i> </a>
+                <a href="https://music.apple.com/artist/5-seconds-of-summer/538811449"> <i class="fi fi-ss-music-alt"></i> </a>
+                <a href="https://open.spotify.com/artist/5Rl15oVamLq7FbSb0NNBNy"> <i class="lni lni-spotify-original"></i> </a>
+            </div>
+        </div>
+        <div class="footer__contact-form footer__section">
+            <h2>Contacto</h2>
+            <div>
+                <a href="https://5sos.com/">  </a>
+            </div>
+        </div>
+        <div class="footer__more-sites footer__section">
+            <h2>Otros de mis sitios</h2>
+        </div>
+    </footer>
+</body>
+
 </html>
