@@ -1,0 +1,102 @@
+@font-face {
+    font-family: "urw antiqua";
+    font-weight: 100 600;
+    font-display: swap;
+    font-style: normal;
+    src: url(assets/urw-antiqua-medium.woff2?v=1) format("woff2");
+}
+
+@font-face {
+    font-family: "urw antiqua";
+    font-weight: 700 900;
+    font-display: swap;
+    font-style: normal;
+    src: url(assets/urw-antiqua-bold.woff2?v=1) format("woff2");
+}
+
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    background-color: rgb(163, 186, 169);
+    color: rgb(68, 94, 104);
+    font-family: "urw antiqua";
+    font-weight: 100;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    text-align: center;
+}
+
+div {
+    display: flex;
+}
+
+#footer {
+    display: flex;
+    margin-top: auto;
+    background: rgb(141, 131, 153);
+}
+
+.footer__section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social__media__icons {
+    display: flex;
+    gap: 20px;
+}
+
+#links-sidebar {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    background: rgb(185, 155, 123);
+    gap: 10px;
+    padding: 8px;
+}
+
+#main-content {
+    flex: 6;
+    padding: 10px 20% 10px 10px;
+}
+
+.main-content_img--full-width {
+    width: 100%;
+}
+
+.font-passions {
+    font-family: 'Passions Conflict', cursive;
+    font-size: 32px;
+}
+
+.font-rubik-puddles {
+    font-family: 'Rubik Puddles', cursive;
+    font-size: 21px;
+}
+
+.font-silkscreen {
+    font-family: 'Silkscreen', cursive;
+}
+
+.font-rubik-marker {
+    font-family: 'Rubik Marker Hatch', cursive;
+    font-size: 24px;
+}
